@@ -1,0 +1,12 @@
+.Dcard{
+    /* background-color: aqua; */
+}
+
+
+/* Styles for screens with a maximum width of 600 pixels */
+@media (min-width: 414px) and (max-width: 896px) {
+  .Dcard {
+            overflow-x: scroll;
+        }
+  }
+  

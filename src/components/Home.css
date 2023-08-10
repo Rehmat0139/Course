@@ -1,0 +1,141 @@
+Link {
+  color: #333; 
+  text-decoration: none; 
+   transition: color 0.2s ease-in-out; 
+  padding: 0.5rem 1rem;
+}
+
+Link:hover {
+  color: #666; 
+}
+
+
+.form_page{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding: 5rem;
+}
+
+
+.login-form{
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  min-height: 400px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+input[type="Email"] {
+  width: 400px;
+}
+
+.image1{
+    margin-top: 30px;
+    object-fit: contain;
+    filter: drop-shadow(0 40px 10px rgba(85, 77, 77, 0.3));
+    -webkit-filter: drop-shadow(0 40px 10px rgba(85, 77, 77, 0.3));
+    animation: lamp 1s infinite ease-in-out alternate ;
+    -webkit-animation: lamp 1s infinite ease-in-out alternate ;
+}
+
+@keyframes lamp {
+        to{
+            transform: translateY(-10px);
+            -webkit-transform: translateY(-10px);
+            -moz-transform: translateY(-10px);
+            -ms-transform: translateY(-10px);
+            -o-transform: translateY(-10px);
+}
+}
+
+.SideNav{
+    position: absolute;
+}
+
+.login_signup_btn{
+  display: flex;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 58px 0 0; 
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+    width: 240px;
+    z-index: 600;
+  }
+  
+  @media (max-width: 991.98px) {
+    .sidebar {
+      width: 100%;
+    }
+    .login_signup_btn{
+      margin-top: 10px;
+      padding: 10px;
+    }
+  }
+  .sidebar .active {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  }
+  
+  .sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto; 
+  }
+
+ .brand_icons > i{
+  font-size: 30px;
+ }
+
+
+ ul > i{
+  height: 100px;
+ }
+
+
+ @media (max-width: 767px) {
+  .nav-links-open {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+
+  .nav-links-open a {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+
+.profile-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (max-width: 767px) {
+  .profile-section-open {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
