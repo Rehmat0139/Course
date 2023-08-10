@@ -93,13 +93,15 @@ function NavScroll() {
                   Profile
                 </Button>
               </Link>
-              <Button
-                className="me-md-2 d-block border-secondary bg-secondary m-3"
-                onClick={logoutHandler}
-              >
-                <i className="bi bi-box-arrow-left" style={{ margin: 4 }}></i>
-                Log-out
-              </Button>
+              <Link to='/Login'>
+                <Button
+                  className="me-md-2 d-block border-secondary bg-secondary m-3"
+                  onClick={logoutHandler}
+                >
+                  <i className="bi bi-box-arrow-left" style={{ margin: 4 }}></i>
+                  Log-out
+                </Button>
+              </Link>
 
               {user && user.role === "admin" && (
                 <Link to="/admin/dashboard" onClick={handleNavToggle}>
